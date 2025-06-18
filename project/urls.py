@@ -6,7 +6,7 @@ from django.conf import settings
 
 urlpatterns = [
 
-    path('', include('contact.urls')),
+    path('', include('contact.urls', namespace='contact')),
     path('admin/', admin.site.urls),
 ]
 
