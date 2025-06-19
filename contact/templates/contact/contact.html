@@ -1,6 +1,7 @@
 {% extends "contact/index.html" %}
 
 {% block content %}
+
         <div class="single-contact">
             <h1 class="single-contact-name">
                 {{ contact.first_name }} {{contact.last_name}}
@@ -12,6 +13,5 @@
             <p><b>Created Date:</b> {{contact.created_date}}</p>
             <p><b>Description:</b> {{contact.description}}</p>
             <p><b>Category:</b> {{contact.category.name}}</p>
-
         </div>
     {% endblock content %}
